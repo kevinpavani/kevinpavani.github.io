@@ -4155,16 +4155,16 @@ input, select, textarea {
 
 	}
 
-/* Make footer contact icons larger */
-.contact li:before {
-    font-size: 1.5rem !important; /* Adjust this number (1.8, 2.0, etc.) to go even bigger */
-    line-height: 1.5;
-    margin-right: 0.5em;
-    vertical-align: middle;
+/* Force the icons to be larger */
+body #footer .contact li::before {
+    font-size: 2rem !important; /* Increased to 2rem for a noticeable change */
+    width: 2.5rem !important;   /* Makes sure the icon has enough "room" */
+    line-height: 2.5rem !important;
 }
 
-/* Optional: Space out the list items so they don't look cramped */
-.contact li {
-    margin-bottom: 1.5em; 
-    font-size: 1.1rem; /* Slightly increases the text size to match */
+/* Adjust the text position to stay aligned with the bigger icons */
+body #footer .contact li {
+    padding-left: 3.5rem !important;
+    line-height: 2.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
